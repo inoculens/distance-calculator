@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Config -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- SEO -->
+	<title>INOCULENS - Distance Calculator</title>
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+	<meta name="description" content="Calculate the distance fee.">
+
+	<!-- FAV ICON -->
+	<link rel="shortcut icon" type="image/png" href="https://static.inoculens.com/fav">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="distance-calculator/css/style.css">
+</head>
+<body>
+	<form name="calculator">
+		<div class="inputs">
+			<div class="header">
+				<p><b>Base Location</b></p>
+				<p id="location">Utrecht</p>
+			</div>
+			<br>
+			<div class="fare">
+				<p><b>Current Fares</b></p>
+				<p>€5 / 8 km ❚ €150 / night</p>
+				<br>
+			</div>
+			<input type="text" name="Base_Location" id="baseLocation" value="Utrecht" readonly hidden><br><br>
+			<p>Enter event location</p>
+			<input type="text" name="Event_Location" id="eventLocation"><br><br>
+			<p>Enter event nights</p>
+			<input type="number" id="eventDays" value="0" min="0"><br><br>
+		</div>
+		<div class="results">
+			<p><b>Distance</b></p>
+			<p id="result">...</p>
+			<p><b>Costs</b></p>
+			<p id="cost">...</p>
+			<br>
+		</div>
+		<button type="button" onclick="calculateDistance()">Calculate</button>
+		<input type="submit" id="submit" hidden />
+	</form>
+	<script src="distance-calculator/js/database-processing.js"></script>
+	<script src="distance-calculator/js/script.js"></script>
+</body>
+</html>
