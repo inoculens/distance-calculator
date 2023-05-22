@@ -6,6 +6,11 @@
 With this tool, the exact fare is shown upon entering the location of the meeting.<br><br><br>
 
 ## <b>Change Log:</b><br><br>
+<b>Release 〢 1.1.0 (mk1)</b>
+
+- The tool is now registering the inputs and the results into the database correctly and in full.
+- Adjusted the README.md file to represent INOCULENS legal starting date.
+
 <b>Release 〢 1.0.0 (mk1)</b>
 
 - The tool is able to generate an exact price upon entering a valid location.
@@ -16,4 +21,4 @@ With this tool, the exact fare is shown upon entering the location of the meetin
 **This repository follows the [iVer](https://github.com/frontfacer/iVer) versioning format.*
 
 #
-<p align="center">© 2022 〣 INOCULENS<br/>www.inoculens.com<br>
+<p align="center">© 2023 〣 INOCULENS<br/>www.inoculens.com<br>

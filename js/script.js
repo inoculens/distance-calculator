@@ -1,7 +1,7 @@
 window.onload = function() {
     // Clear Inputs
     document.getElementById("eventLocation").value = "";
-    document.getElementById("eventDays").value = "0";
+    document.getElementById("Event_Nights").value = "0";
 }
 
 function calculateDistance() {
@@ -35,11 +35,18 @@ function calculateDistance() {
         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
         var distance = R * c;
 
-        document.getElementById('submit').click();
-        document.getElementById('result').innerHTML = distance.toFixed(2) + " km";
-        let nigts = document.getElementById('eventDays').value
+        // App calculations
+        document.getElementById('distanceResult').innerHTML = distance.toFixed(2) + " km";
+        let nigts = document.getElementById('Event_Nights').value
         let cost = distance.toFixed(2) / 8 * 5 + nigts * 150;
-        document.getElementById('cost').innerHTML = "€" + cost.toFixed(2);
+        document.getElementById('costResult').innerHTML = "€" + cost.toFixed(2);
+
+        // Submit extra variables
+        document.getElementById('eventDistance').value = document.getElementById('distanceResult').innerHTML;
+        document.getElementById('eventCost').value = document.getElementById('costResult').innerHTML;
+
+        // Form Submit
+        document.getElementById('submit').click();
     })
     .catch(error => {
         alert("An error occurred while geocoding the locations.");

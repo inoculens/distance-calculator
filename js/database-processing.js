@@ -1,5 +1,5 @@
 // Procesarea bazei de date
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzlAvQmGBquywIZrEqM6g9VwnWM6KaoqA1sZfh8A_VWLU-RvYY-vEvZiXxnayHgtWn2/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbznEnBFfAtSWIHxT2i0edrrCMgWsZWmDp4KjAsE0NmSQUF43MyKXyHLc_selS7Q3q9oxA/exec'
 const form = document.forms['calculator']
 
 // Trimite inputul catre baza de date
